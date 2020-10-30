@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+    font-size: 18px;
+    font-family: "Open Sans", serif;
+    line-height: 2.0;
+}
+
+h1 {
+    font-family: "Abel", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    color: #000000;
+    line-height: 1.0;
+}
+
+h1 {
+    font-family: "Abel", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    color: #000000;
+    line-height: 1.0;
+}
+
+h2.headline {
+    font-size: 40px;
+    color: maroon;
+    font-family: "Abel", Arial, sans-serif;
+}
+
+.top-space-10 {
+    margin-top: 10px;
+}
+
+.top-space-20 {
+    margin-top: 20px;
+}
+
+.top-space-30 {
+    margin-top: 30px;
+}
+
+.top-space-40 {
+    margin-top: 40px;
+}
+
+.top-space-50 {
+    margin-top: 50px;
+}
+
+.tsqa_copyright {
+    font-family: "Abel", Arial, sans-serif;
+    font-size: 12px;
+}
+
+.cmdline {
+    color: #c7254e;
+}
+
+.thin-text {
+    font-family: 'Dosis',Abel, Arial, sans-serif
+}
+
+.white-text {
+    color: #ffffff;
+}
+
+.top-space {
+    margin-top: 25px;
+}
