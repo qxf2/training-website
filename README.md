@@ -1,6 +1,6 @@
 # training-website
 
-Material for the trainingseniorqa.com. This is the public facing website for our training program.
+Material for https://trainingseniorqa.com. This is the public facing website for our training program.
 
 ## SETUP
 
