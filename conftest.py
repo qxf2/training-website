@@ -10,6 +10,6 @@ def pytest_addoption(parser):
  
 #Test arguments:
 @pytest.fixture
-def base_url():
+def base_url(request):
     "pytest fixture for base url"
-    return pytest.config.getoption("-U")
+    return request.config.getoption("-U")
