@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block title %}Testers, upskill yourself the right way{% endblock %}
+{% block content %}
+<p class="text-justify top-space-20"> I come across motivated testers who have sincerely tried to upskill themselves.
+    Their stories end up something like this:
+<blockquote class="blockquote">
+    <p class="quote-text text-right">I have tried to upskill myself. I learnt Python and Selenium. But unfortunately I never really got the chance to apply them at my job. I could not practice at home either. As a result, I have forgotten everything!</p>
+</blockquote>
+</p>
+<hr>
+<h2 class="headline thin-text top-space-30 text-center">How to upskill yourself as a tester</h2>
+<p class="text-justify top-space-20">Maybe your attempt at upskilling yourself has met a similar fate? Maybe after all your efforts, you continually end up as a 'perpetual beginner'? If so, read on for some tips that I have.</p>
+<h3 class="headline thin-text top-space-30">It's probably not you</h3>
+<p class="text-justify top-space-20">If you were motivated enough to spend nights and weekends studying and then forgot stuff because you had no outlet to apply your learning - the problem is probably not you. It is likely that you chose poor tutorials. See if the material you chose had these drawbacks:
+    <br><br>
+    a. <i>Over-simplified examples:</i> Most tutorials on the Internet are designed to take you from ignorant to beginner. While that is good, the problem is that your problem solving skills are not engaged when you do these 'toy' examples. You end up a passive consumer. Your curiousity is not sufficiently engaged. Worse, you lose out on several learning moments that come from having to take engineering decisions in sufficiently complex problems.
+    <br><br>
+    b. <i>Incorrect learning muscles:</i> Most online tutorials engage the wrong set of learning muscles in testers. As testers, we are good at observing and searching and making connections. Shouldn't our learning material allow us to use our strengths? We should not have to over-rely on memory and procedue. We feel our training material should begin with "That seems fishy. Let me investigate ..."
+    <br><br>
+    c. <i>Single focus:</i> Any work you do in your day job involves a combination of skills and knowledge in multiple areas. So tutorials with one single focus are unrealistic. And not only that, learners are mislead into thinking that they need to sequentially learn subject after subject before they can apply their new knowledge on something useful. No wonder most people give up!
+</p>
+<h3 class="headline thin-text top-space-30">What you can try instead</h3>
+<p class="text-justify top-space-20">I have a couple of suggestions to make your learning stick.
+    <br><br>
+    <u><h5>Option 1: Find a problem that motivates you</h5></u>
+    This will sound counter-intuitive - but do not start with the technology you want to learn. Begin with an interesting problem instead! Then, keep learning just enough to help you solve the problem. Do not bother about gaining in-depth knowledge about a tool. Instead, trust that as you keep solving interesting problems for yourself, your arsenal of tools, techniques and knowledge will continue to grow.  As an example, I used to like investing in stocks. When I was learning Python (back in 2006!), I wrote a script to scrape Google Finance pages for my portfolio and display the day's gain/loss. I knew very little about Python and my code was horrible! But in the course of solving this practical problem for myself, I learnt discovered many Python modules and whole lot of other practical programming ideas that I could not have gained directly from a book. Unnown to me at that time, the knowledge really helped me in several testing contexts. Even today, most of my learning and upskilling starts with my own problems and hobbies.
+    <br><br>
+    <u><h5>Option 2: Find creative exercises</h5></u>
+    Put some effort into finding high quality tutorials. My company, <a href="https://qxf2.com/?utm_source=upskillRightWay&utm_medium=click&utm_campaign=From%20trainingseniorqa">Qxf2 Services</a>, puts out many free exercises that are aimed at testers. Our exercises are designed to make you work on mutliple areas at once. They are neither too simple nor are they so complex that you will take forever to finish. Wherever possible, we let you (the tester) start by identifying bugs or errors. The learning happens as you chase down the bug and try to figure out the technical reasons behind it.
+    <br><br>
+    Here is a sampling of our free, open-sourced offerings:
+    <br><br>
+    1. <a href="https://github.com/qxf2/wtfiswronghere">wtfiswronghere</a>: Improve your Python by fixing errors. We present small code samples that have errors in them. This tutorial is aimed at Python beginners. You will simultaneously learn to use git, GitHub, git bash, Visual Studio Code and Python.
+    <br><br>
+    2. <a href="https://github.com/qxf2/makemework">makemework</a>: Fix the issues in this repo and make this program work. This exercise is aimed at folks who have already learnt to write basic Python but are looking for more realistic challenges that involve reading a large enough codebase, exploring file structures and making changes to an existing codebase.
+    <br><br>
+    3. <a href="http://weathershopper.pythonanywhere.com/">Weather Shopper</a>: A web application to hep testers learn Selenium and practice programming simultaneously. Each page will have an 'i' icon that you can click and read the task you need to complete.
+    <br><br>
+    4. <a href="https://github.com/qxf2/cars-api">Cars App</a>: A sample REST application to help testers learn to write API automation. You will learn to use git, git bash, (possibly) Docker, API libraries in a language of your choice and/or a API testing tool of your choice.
+    <br><br>
+    5. <a href="http://trainingdatabase.pythonanywhere.com/">Database trainer</a>: Work with a buggy web application that uses MySQL as a backend. Validate the data shown on the web application by performing SQL queries.
+    <br><br>
+    6. <a href="https://practice-testing-ai-ml.qxf2.com/is-pto">Is PTO?</a>: Use this site to practice testing AI/ML based applications. Post a sentence and the app will tell you if you are applying for leave or not. Your goal is to test the machine learning algorithm and figure out its drawbacks.
+    <br><br>
+    All these tools were created by <a href="https://qxf2.com/team">Team Qxf2</a>. The code assocoated with these tools has been open-sourced under the MIT License. So feel free to fork our repos and modify them to suit your needs!
+    </p>
+    <h3 class="headline thin-text top-space-30">Conclusion</h3>
+    <p class="text-justify top-space-20">If you are a motivated tester who has had problems upskilling despite your best efforts - consider starting with a problem you find interesting OR use some of the free exercises listed on this post. Good luck!</p>
+    <h3 class="headline thin-text top-space-30">About me</h3>
+    <p class="text-justify top-space-20">I am Arun. I run <a href="https://qxf2.com/?utm_source=upskillRightWay&utm_medium=click&utm_campaign=From%20trainingseniorqa">Qxf2 Services</a>. My company mostly hires highly experienced senior engineers with very good testing fundamentals. More than half of us have a dozen plus years of experience. The downside of this hiring strategy is that we end up having QA engineers who are good at testing but are insufficiently technical. So we naturally spend a lot of time and effort in addressing this problem of upskilling senior QA engineers. A lot of the material on the <a href="https://qxf2.com/blog">Qxf2 Blog</a> and in our training course is what we use to help new hires at Qxf2 to enhance their technical skills and knowledge. I hope you find the material we share useful!</p>
+<hr>
+{% endblock %}
