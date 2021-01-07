@@ -66,6 +66,7 @@ h2.headline {
 
 .quote-text {
     color: #CD5C5C;
+    font-size: 0.9em !important;
 }
 
 .top-space {

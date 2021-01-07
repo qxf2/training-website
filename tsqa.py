@@ -60,8 +60,13 @@ def training_pricing():
 
 @app.route("/senior-qa-upskill-fail")
 def training_upskill_fail():
-    "Training pricing"
+    "Why attempts at upskilling fail"
     return render_template('senior-qa-upskill-fail.html',title='Testers, upskill yourself the right way')
+
+@app.route("/how-become-technical-tester")
+def ease_into_technical_testing():
+    "Ease into technical testing"
+    return render_template('how-to-become-technical-tester.html',title='How to become a technical tester')
 
 #---START OF SCRIPT
 if __name__ == '__main__':

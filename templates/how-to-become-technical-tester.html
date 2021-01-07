@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}How to become a technical tester{% endblock %}
+{% block content %}
+<p class="text-justify top-space-20"> I hear a growing chorus of similar-sounding questions from folks who feel trapped as 'manual testers' but find learning automation boring. Their problems sound a bit like this:
+<blockquote class="blockquote">
+    <p class="quote-text text-right">I am bored with my current job as a manual QA - seem to be having a hard time "preparing" for my new journey. What can I do?</p>
+</blockquote>
+</p>
+<hr>
+<h2 class="headline thin-text top-space-30 text-center">Ease your transition into technical testing</h2>
+<p class="text-justify top-space-20">Many testers spend nights and weekends trying to learn a programming language and (what else?) Selenium. But something never feels right. The much-hyped automation seems slow and flaky and much less efficient than 'manual testing'. Automation, to them, is at best a poor and insufficient substitute to what they already do well as a human. And yet, they tell themselves that they 'have to learn automation' because our field is becoming more and more technical. If you are someone who is holding your nose and learning automation just so you can be a bit more technical, I have a bit of good news for you - learning automation is not your only path to becoming more technical.</p>
+<h3 class="headline thin-text top-space-30"><u>Technical Testing != Automation</u></h3>
+<img src="/static/img/technical-testing-not-automation.png" class="img-fluid rounded mx-auto d-block" alt="Technical QA != Automation" style="width: 30%">
+<p class="text-justify top-space-20">Do not fall into the trap of equating writing automation to being technical. Technical QA involves being able to understand systems and design tradeoffs, adhere to good engineering principles, perform complex setup operations, create tools that enable other testers and much more. As you become more technical, you will realize that the 'manual' vs 'automation' mental model makes no sense at all!</p>
+<p class="text-justify top-space-20">As an example, imagine testing a voice assistant like Alexa. Testers probably have to think of voice and ambient noise and semantic structure and accents and language patterns. They need to understand how Alexa learns and how data flows and how questions are stored. There are so many technical avenues for a technical tester to provide value to the team in such scenarios.</p>
+<h3 class="headline thin-text top-space-30"><u>What you can try instead</u></h3>
+<img src="/static/img/one-leg-new-familiar.png" class="img-fluid rounded mx-auto d-block" alt="One leg in the familiar" style="width: 30%">
+<p class="text-justify top-space-20">Start with where you are. And start with what you know well. Start with a hobby and then apply your 'tester brains' to that hobby. If you love music, try to muck around with Spotify and test one tiny aspect of their recommendation algorithm. Doing that will automatically take you down rabbit holes of machine learning and statistics and big data. Pick the intersections of testing and technology that interest you. This way you will have one leg firmly anchored in the familiar while you step into the unknown. Your expertise/interest in your hobby should lead you to ask interesting questions that will then inform the design of good tests. The technical learning will follow.</p>
+    <h3 class="headline thin-text top-space-30"><u>A concrete example</u></h3>
+    <p class="text-justify top-space-20">In our senior QA training program, we expect the trainee to pick an app that they want to test. But if they cannot, we default to using an application we call the PTO Detector as the backdrop for the training. At Qxf2, we have a channel where employees announce their leave plans. We call this channel the 'PTO Channel' where PTO stands for <b>P</b>ersonal <b>T</b>ime <b>O</b>ff. When an employee posts a message, the PTO detector evaluates if the message is a 'leave-message' or not. If it thinks the employee is asking for leave, it posts back a 'PTO detected' message.</p>
+    <img src="/static/img/example_pto_detection.png" class="img-fluid rounded mx-auto d-block" alt="example PTO detection" style="width: 60%">
+    <p class="text-justify top-space-20">The PTO detector application is a set of microservices loosely coupled by some AWS SQS and AWS Lambdas. The architecture of this entire setup looks something like this:
+    </p>
+    <img src="/static/img/pto-detector-architecture.png" class="img-fluid rounded mx-auto d-block" alt="PTO detector architecture" style="width: 70%">
+    <p class="text-justify top-space-20">This relatively simple application has the potential to let you ease into a more technical level of testing. There are so many paths that a curious tester can take.
+        <br><br>
+        Maybe you are so used to only 'manual testing' that you start by trying out different sentences. From there you could branch into finding out the kind of mathematical metrics that are used to report the accuracy of the algorithm.
+        <br><br>
+        If you find that kind of stuff boring, maybe you want to focus on the variety of ways Skype messages are encoded and transmitted. E.g.: what happens when you quote someone or send an emoji?
+        <br><br>
+        Maybe you are already fairly technical and want to branch into the DevOps side of things. You can write some tests configure GitHub Actions for yourself. As part of doing this exercise, I ended up modifying someone else's GitHub Action to deploy lambdas.
+        <br><br>
+        Maybe you are interested in Machine Learning. You could start by examining the scikit-learn model that is used and looking at the model's top features.
+        <br><br>
+        Perhaps you want to learn more about monitoring and alerting of production models? Maybe you just want to learn to write bread and butter GUI and API tests? Maybe you want to know how to create contract tests for a couple of microservices? Or you just want to get used to manually testing applications hosted on an AWS stack? The possibilities are endless.</p>
+    <h3 class="headline thin-text top-space-30"><u>Conclusion</u></h3>
+    <p class="text-justify top-space-20">If you are looking to become a more technical tester, do not start with learning automation. Instead, start with a hobby and find a way to test some aspect of your hobby. Follow the rabbit holes that this effort leads you and you will automatically become a more technical tester. Good luck!</p>
+    <h3 class="headline thin-text top-space-30"><u>About me</u></h3>
+    <p class="text-justify top-space-20">I am Arun. I run <a href="https://qxf2.com/?utm_source=upskillRightWay&utm_medium=click&utm_campaign=From%20trainingseniorqa">Qxf2 Services</a>. My company mostly hires highly experienced senior engineers with very good testing fundamentals. Many of us started testing before webdriver was a thing. The downside of this hiring strategy is that we end up having QA engineers who are good at testing but are insufficiently technical. So we naturally spend a lot of time and effort in addressing this problem of upskilling senior QA engineers. A lot of the material on the <a href="https://qxf2.com/blog">Qxf2 Blog</a> and in our training course is what we use to help new hires at Qxf2. I hope you find the material we share useful!</p>
+<hr>
+{% endblock %}
