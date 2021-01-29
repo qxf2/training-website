@@ -68,6 +68,11 @@ def ease_into_technical_testing():
     "Ease into technical testing"
     return render_template('how-to-become-technical-tester.html',title='How to become a technical tester')
 
+@app.route("/how-increase-technical-exposure")
+def how_increase_technical_exposure():
+    "How to increase your technical exposure"
+    return render_template('purposeless-exploration.html',title='How to become a technical tester')
+
 #---START OF SCRIPT
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=6464, debug= True)
